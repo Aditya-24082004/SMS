@@ -1,0 +1,82 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+}
+
+/* Sizes */
+.badge--sm {
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.badge--md {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.badge--lg {
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+}
+
+/* Variants */
+.badge--default {
+    background: var(--color-gray-200);
+    color: var(--color-gray-700);
+}
+
+.badge--success {
+    background: var(--color-success-light);
+    color: #065f46;
+}
+
+.badge--warning {
+    background: var(--color-warning-light);
+    color: #92400e;
+}
+
+.badge--danger {
+    background: var(--color-danger-light);
+    color: #991b1b;
+}
+
+.badge--info {
+    background: var(--color-info-light);
+    color: #1e40af;
+}
+
+.badge--primary {
+    background: var(--color-primary-lighter);
+    color: var(--color-primary-dark);
+}
+
+/* Status-specific badges */
+.badge--pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge--assigned {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.badge--in-progress {
+    background: #e0e7ff;
+    color: #3730a3;
+}
+
+.badge--completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.badge--rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
